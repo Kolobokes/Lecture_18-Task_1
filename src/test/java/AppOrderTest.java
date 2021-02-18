@@ -13,7 +13,7 @@ public class AppOrderTest {
     void TestNameOnlyOneWord(){
         open("http://localhost:9999");
         SelenideElement form = $("#root");
-        form.$("[data-test-id='name'] .input__control").setValue("Q");
+        form.$("[data-test-id='name'] .input__control").setValue("Иванов Василий Иванович");
         form.$("[data-test-id='phone'] .input__control").setValue("+79094537420");
         form.$(".checkbox__box").click();
         form.$("[type='button']").click();
