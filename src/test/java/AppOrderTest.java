@@ -1,4 +1,5 @@
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +12,9 @@ import static com.codeborne.selenide.Selenide.open;
 public class AppOrderTest {
     @Test
     void TestNameOnlyOneWord(){
+
+        Configuration.headless = true;
+
         open("http://localhost:9999");
         SelenideElement form = $("#root");
         form.$("[data-test-id='name'] .input__control").setValue("Иванов Василий Иванович");
