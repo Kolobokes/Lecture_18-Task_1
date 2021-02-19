@@ -36,6 +36,6 @@ public class AppOrderTest {
         form.$(".checkbox__box").click();
         form.$("[type='button']").click();
   //      String text = form.$("[data-test-id='name'] .input__sub").getAttribute("text");
-        $("[data-test-id='name'] .input__sub").shouldHave(exactText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
+        $("[data-test-id='name'] .input__sub").shouldHave(exactText("Им и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы."));
     }
 }
