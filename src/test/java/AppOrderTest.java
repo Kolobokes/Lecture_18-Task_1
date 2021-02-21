@@ -12,9 +12,9 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class AppOrderTest {
     @Test
-    void CorrectTest(){
+    void correctTest(){
 
-        Configuration.headless = true;
+    //    Configuration.headless = true;
 
         open("http://localhost:9999");
         SelenideElement form = $("#root");
@@ -26,9 +26,9 @@ public class AppOrderTest {
     }
 
     @Test
-    void InCorrectNameTest(){
+    void inCorrectNameTest(){
 
-        Configuration.headless = true;
+    //    Configuration.headless = true;
 
         open("http://localhost:9999");
         SelenideElement form = $("#root");
@@ -40,9 +40,9 @@ public class AppOrderTest {
     }
 
     @Test
-    void InCorrectTelephoneNumberTest(){
+    void inCorrectTelephoneNumberTest(){
 
-        Configuration.headless = true;
+    //    Configuration.headless = true;
 
         open("http://localhost:9999");
         SelenideElement form = $("#root");
@@ -54,9 +54,9 @@ public class AppOrderTest {
     }
 
     @Test
-    void CheckBoxFalseTest(){
+    void checkBoxFalseTest(){
 
-        Configuration.headless = true;
+   //     Configuration.headless = true;
 
         open("http://localhost:9999");
         SelenideElement form = $("#root");
