@@ -14,8 +14,6 @@ public class AppOrderTest {
     @Test
     void correctTest(){
 
-   //     Configuration.headless = true;
-
         open("http://localhost:9999");
         SelenideElement form = $("#root");
         form.$("[data-test-id='name'] .input__control").setValue("Иванов Василий Иванович");
@@ -27,8 +25,6 @@ public class AppOrderTest {
 
     @Test
     void inCorrectNameTest(){
-
-    //    Configuration.headless = true;
 
         open("http://localhost:9999");
         SelenideElement form = $("#root");
@@ -42,8 +38,6 @@ public class AppOrderTest {
     @Test
     void inCorrectTelephoneNumberTest(){
 
-   //     Configuration.headless = true;
-
         open("http://localhost:9999");
         SelenideElement form = $("#root");
         form.$("[data-test-id='name'] .input__control").setValue("Иванов Василий Иванович");
@@ -55,8 +49,6 @@ public class AppOrderTest {
 
     @Test
     void checkBoxFalseTest(){
-
-   //     Configuration.headless = true;
 
         open("http://localhost:9999");
         SelenideElement form = $("#root");
